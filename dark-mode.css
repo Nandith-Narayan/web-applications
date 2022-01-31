@@ -1,0 +1,188 @@
+body{
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, serif;
+    --button-background: #00000000;
+    --main-background: #15202b;
+    --primary-text: #ffffff;
+    --secondary-text: #8899a6;
+    --card: #192734;
+    --hover-color: #22303c;
+    background: var(--main-background);
+    color: var(--primary-text);
+
+}
+
+/*Header Navigation Bar*/
+/*#################################################################*/
+@media (max-width: 768px){
+    header nav#header-nav{
+        background: var(--main-background);
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        gap: 1em;
+    }
+
+    header nav#header-nav a button{
+        background: var(--button-background);
+        color: var(--secondary-text);
+        width: 80vw;
+        border-style: solid;
+        border-color: rgb(255, 255, 255, 0.1);
+        border-radius: 0;
+        transition: 0.25s;
+    }
+    header nav#header-nav a button:hover{
+        color: var(--primary-text);
+        border-style: solid;
+        border-color: red;
+        background-color: rgb(255, 0, 0, 0.3);
+        border-radius: 8px;
+
+    }
+    header nav#header-nav a button#current-page{
+        color: var(--primary-text);
+        border-style: solid;
+        border-color: yellow;
+        border-radius: 8px;
+    }
+    header nav#header-nav a button#current-page:hover{
+        color: var(--primary-text);
+        border-style: solid;
+        border-color: yellow;
+        background-color: rgb(255, 255, 0, 0.4);
+        border-radius: 8px;
+
+    }
+}
+/*Header Navigation Bar Small Screen 768px*/
+/*#################################################################*/
+@media (min-width: 769px){
+    header nav#header-nav{
+        background: var(--main-background);
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        gap: 1em;
+    }
+
+    header nav#header-nav a button{
+        background: var(--button-background);
+        color: var(--secondary-text);
+        border-style: solid;
+        border-color: rgb(255, 255, 255, 0.1);
+        border-radius: 0;
+        transition: 0.25s;
+    }
+    header nav#header-nav a button:hover{
+        color: var(--primary-text);
+        border-style: solid;
+        border-color: red;
+        background-color: rgb(255, 0, 0, 0.3);
+        border-radius: 8px;
+
+    }
+    header nav#header-nav a button#current-page{
+        color: var(--primary-text);
+        border-style: solid;
+        border-color: yellow;
+        border-radius: 8px;
+    }
+    header nav#header-nav a button#current-page:hover{
+        color: var(--primary-text);
+        border-style: solid;
+        border-color: yellow;
+        background-color: rgb(255, 255, 0, 0.4);
+        border-radius: 8px;
+
+    }
+}
+
+header h1:after{
+    display: block;
+    height: 4px;
+    content: "";
+    background: linear-gradient(-90deg, #0c0cb6, #00ffff);
+    border-radius: 80px;
+}
+
+/*General Cards*/
+/*#################################################################*/
+card{
+    display: block;
+    background-color: var(--card);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 1em;
+}
+card h2{
+    margin-top: 0;
+}
+div.card-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    /*grid-column-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr;*/
+
+}
+div.card-grid card{
+    text-align: center;
+}
+card a{
+    text-decoration: none;
+}
+card a img{
+    max-height: 120px;
+    width: auto;
+
+}
+
+
+
+/*Profile Picture*/
+/*#################################################################*/
+img#profile-pic{
+    border-radius: 100%;
+    transition: 0.3s;
+}
+img#profile-pic:hover{
+    border-radius: 20%;
+}
+
+/*Link Buttons*/
+/*#################################################################*/
+a button.quick-link{
+    background-color: #00000000;
+    border-color: rgb(255, 255, 0, 0.1);
+    color: var(--secondary-text);
+    border-style: dotted;
+    transition: 0.25s;
+}
+
+a button.quick-link:hover{
+    background-color: #00000000;
+    border-color: rgb(255, 255, 0, 0.7);
+    border-style: solid;
+
+}
+ul#quick-links{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+ul#quick-links li{
+    margin-left: -2em;
+}
+ul#quick-links li a{
+
+    text-decoration: none;
+}
+ul#quick-links li a button{
+    display: flex;
+    width: 10em;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top: 0.2em
+
+}
