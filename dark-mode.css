@@ -138,7 +138,20 @@ card a img{
 
 }
 
+/*Skill Cards*/
+/*#################################################################*/
+div.skill-card-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    /*grid-column-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr;*/
 
+}
+div.skill-card-grid card{
+    text-align: left;
+}
 
 /*Profile Picture*/
 /*#################################################################*/
