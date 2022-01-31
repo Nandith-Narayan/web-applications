@@ -30,8 +30,8 @@
     </header>
     <h1>My Projects</h1>
     <p>Here is a list of some of my Projects</p>
-    <ol>
-        <li>
+    <div class="project-card-grid">
+        <card>
             <strong>Game Boy Emulator:</strong><br>
             <img src="resources/GBEmulatorProject.png" alt="Screenshot of my Game Boy Emulator running Tetris">
             <p>
@@ -43,8 +43,8 @@
                 The PPU and APU handle the graphics and audio functionalities of the Game Boy respectively.
                 To make this emulator, I had to individually emulate each of these components and integrate them together.
             </p>
-        </li>
-        <li>
+        </card>
+        <card>
             <strong>Super Mario World AI:</strong><br>
             <img src="resources/MarioAIProject.png" alt="Screenshot of my AI autonomously playing Super Mario World">
             <p>
@@ -60,8 +60,8 @@
                 I then recorded the actions that these agents were performing and used it as input data to my main network.
                 This allowed the main network to learn to generalize and play multiple levels.
             </p>
-        </li>
-        <li>
+        </card>
+        <card>
             <strong>Mini-Java Compiler:</strong><br>
             <p>
                 During Dr.Stansifer's Compiler Theory class, I wrote a mini-java to SPARK compiler in java.
@@ -72,8 +72,8 @@
                 The parse tree was converted into an intermediate representation and flattened.
                 Now, instruction selection was performed after which, register allocation was also performed.
             </p>
-        </li>
-    </ol>
+        </card>
+    </div>
 
 
 </body>
