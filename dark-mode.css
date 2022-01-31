@@ -216,3 +216,19 @@ ul#quick-links li a button{
     margin-top: 0.2em
 
 }
+/*Submit Button*/
+/*#################################################################*/
+button#submit-button{
+    color: #00ffffa0;
+    background: #ff00ff20;
+    border-color: #000000;
+    border-style: solid;
+    transition: 0.25s;
+}
+button#submit-button:hover{
+    color: #00ffff;
+    background: #ff00ff60;
+    border-color: #000000;
+    border-style: solid;
+    border-radius: 10px;
+}
