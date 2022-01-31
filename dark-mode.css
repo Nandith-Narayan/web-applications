@@ -113,6 +113,7 @@ card{
     padding: 20px;
     border-radius: 20px;
     margin-bottom: 1em;
+    box-shadow: 1px 1px black;
 }
 card h2{
     margin-top: 0;
