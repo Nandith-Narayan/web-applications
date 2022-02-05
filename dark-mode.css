@@ -2,12 +2,15 @@ body{
     font-family: "Segoe UI", Roboto, Helvetica, Arial, serif;
     --button-background: #00000000;
     --main-background: #15202b;
+    --footer-background: #0b0f15;
     --primary-text: #ffffff;
     --secondary-text: #8899a6;
     --card: #192734;
     --hover-color: #22303c;
     background: var(--main-background);
     color: var(--primary-text);
+    overflow-x: hidden;
+
 
 }
 
@@ -130,8 +133,15 @@ div.card-grid{
 div.card-grid card{
     text-align: center;
 }
+
 card a{
     text-decoration: none;
+    color: var(--primary-text);
+
+}
+card a:hover{
+    text-decoration: none;
+    color: #09daee;
 }
 card a img{
     max-height: 120px;
@@ -231,4 +241,36 @@ button#submit-button:hover{
     border-color: #000000;
     border-style: solid;
     border-radius: 10px;
+}
+/*Footer*/
+/*#################################################################*/
+footer{
+    display: block;
+    height: 10em;
+
+    margin: -1em;
+    border: 0;
+    padding: 0;
+    background: var(--footer-background);
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    list-style: none;
+    margin-left: -2em;
+
+}
+
+footer ul li a button{
+    margin-top: 2em;
+
+    border: 0;
+    background: #00000000;
+    color: var(--secondary-text);
+    text-decoration: underline;
+}
+footer ul li a button:hover{
+    color: var(--primary-text);
 }
