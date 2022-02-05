@@ -245,32 +245,63 @@ button#submit-button:hover{
 /*Footer*/
 /*#################################################################*/
 footer{
+    height: 12rem;
     display: block;
-    height: 10em;
-
     margin: -1em;
     border: 0;
     padding: 0;
     background: var(--footer-background);
 }
-footer ul{
+footer ul#quick-links{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 1em;
+    gap: 5em;
     list-style: none;
     margin-left: -2em;
 
 }
 
-footer ul li a button{
+footer ul#quick-links li a button{
     margin-top: 2em;
-
+    width: auto;
     border: 0;
     background: #00000000;
     color: var(--secondary-text);
     text-decoration: underline;
+    display: inline-block;
+    text-align: center;
 }
-footer ul li a button:hover{
+footer ul#quick-links li a button:hover{
     color: var(--primary-text);
+}
+
+/*Footer Socials*/
+/*#################################################################*/
+footer ul#social-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+    list-style: none;
+    margin-left: -2em;
+
+}
+
+footer ul#social-links li a button{
+    margin-top: 1em;
+    width: auto;
+    border: 0;
+    background: #00000000;
+    color: var(--secondary-text);
+    text-decoration: underline;
+    display: inline-block;
+    text-align: center;
+}
+footer ul#social-links li a button:hover{
+    color: var(--primary-text);
+}
+footer div#copyright{
+    text-align: center;
+    color: var(--secondary-text);
 }
