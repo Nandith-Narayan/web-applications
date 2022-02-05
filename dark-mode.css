@@ -1,5 +1,17 @@
-body{
+html{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    overflow-x: hidden;
     font-family: "Segoe UI", Roboto, Helvetica, Arial, serif;
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     --button-background: #00000000;
     --main-background: #15202b;
     --footer-background: #0b0f15;
@@ -9,8 +21,9 @@ body{
     --hover-color: #22303c;
     background: var(--main-background);
     color: var(--primary-text);
-    overflow-x: hidden;
 
+}
+header{
 
 }
 
@@ -42,13 +55,13 @@ body{
         border-radius: 8px;
 
     }
-    header nav#header-nav a button#current-page{
+    header nav#header-nav a button#active{
         color: var(--primary-text);
         border-style: solid;
         border-color: yellow;
         border-radius: 8px;
     }
-    header nav#header-nav a button#current-page:hover{
+    header nav#header-nav a button#active:hover{
         color: var(--primary-text);
         border-style: solid;
         border-color: yellow;
@@ -84,13 +97,13 @@ body{
         border-radius: 8px;
 
     }
-    header nav#header-nav a button#current-page{
+    header nav#header-nav a button#active{
         color: var(--primary-text);
         border-style: solid;
         border-color: yellow;
         border-radius: 8px;
     }
-    header nav#header-nav a button#current-page:hover{
+    header nav#header-nav a button#active:hover{
         color: var(--primary-text);
         border-style: solid;
         border-color: yellow;
@@ -146,6 +159,7 @@ card a:hover{
 card a img{
     max-height: 120px;
     width: auto;
+    max-width: 100%;
 
 }
 
@@ -185,6 +199,8 @@ div.project-card-grid card img{
 img#profile-pic{
     border-radius: 100%;
     transition: 0.3s;
+    max-width: 100%;
+    max-height: 100%;
 }
 img#profile-pic:hover{
     border-radius: 20%;
@@ -244,10 +260,10 @@ button#submit-button:hover{
 }
 /*Footer*/
 /*#################################################################*/
+
 footer{
-    height: 12rem;
-    display: block;
-    margin: -1em;
+    height: 12em;
+    margin: auto -1em -1em;
     border: 0;
     padding: 0;
     background: var(--footer-background);
